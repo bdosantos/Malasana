@@ -11,7 +11,18 @@
         <!-- Imagen de fondo -->
         <a-sky src="./taller.png" zoom="min: 0.5; max: 2"></a-sky>
         
+        <!-- Objeto -->
+        <a-entity 
+            obj-model="obj: #pieza1-obj; mtl: #pieza1-mtl" scale="0.1 0.1 0.1"  position="0 1.5 -4">
+        </a-entity>
+        
+        <!-- Asset Management -->
+        <a-assets>
+            <a-asset-item id="pieza1-obj" src="pieza1.obj"></a-asset-item>
+            <a-asset-item id="pieza1-mtl" src="pieza1.mtl"></a-asset-item>
+        </a-assets>
     </a-scene>
 </body>
 </html>
+
 
