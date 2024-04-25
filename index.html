@@ -8,17 +8,19 @@
 </head>
 <body>
     <a-scene>
-        <!-- Imagen de fondo -->
-        <a-sky src="./taller.png" zoom="min: 0.5; max: 2"></a-sky>
+    <!-- Luces -->
+    <a-light type="directional" color="#FFF" intensity="0.7" position="-5 5 5" shadow="cast:true"></a-light>
 
-        <!-- Primer objeto -->
-        <a-entity 
-            obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl" 
-            position="0 1.5 -4" 
-            scale="0.1 0.1 0.1"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"> <!-- Añade una animación de rotación -->
-        </a-entity>      
-    </a-scene>
+    <!-- Imagen de fondo -->
+    <a-sky src="./taller.png" zoom="min: 0.5; max: 2"></a-sky>
+
+    <!-- Primer objeto -->
+    <a-entity 
+        obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl"  position="0 1.5 -4"   scale="0.01 0.01 0.01"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"> <!-- Añade una animación de rotación -->
+    </a-entity>      
+</a-scene>
+
 </body>
 </html>
 
