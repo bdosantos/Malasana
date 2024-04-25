@@ -28,36 +28,3 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piezas</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-</head>
-<body>
-    <a-scene>
-        <!-- Imagen de fondo -->
-        <a-sky src="./taller.png" zoom="min: 0.5; max: 2"></a-sky>
-
-        <!-- Primer objeto -->
-        <a-entity 
-            obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl" 
-            position="-5 1.5 -4" 
-            scale="0.1 0.1 0.1"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"> 
-        </a-entity>  
-
-        <!-- Segundo objeto -->
-        <a-entity
-            obj-model="obj:./pieza2.obj; mtl:./pieza2.mtl"
-            position="-5 1.5 0"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
-        </a-entity>      
-    </a-scene>
-</body>
-</html>
-
-
-
