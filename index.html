@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piezas</title>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piezas</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
@@ -21,30 +15,13 @@
         <a-entity 
             obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl" 
             position="0 1.5 -4" 
-            rotation="0 45 0" 
-            scale="0.1 0.1 0.1" <!-- Ajusta la escala aquí para hacer el objeto más pequeño -->
-            animation="property: rotation; to: 0 405 0; loop: true; dur: 5000">
-            <!-- Añade una animación de rotación -->
+            scale="0.1 0.1 0.1"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"> <!-- Añade una animación de rotación -->
         </a-entity>      
     </a-scene>
 </body>
 </html>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-</head>
-<body>
-    <a-scene>
-        <!-- Imagen de fondo -->
-        <a-sky src="./taller.png" zoom="min: 0.5; max: 2"></a-sky>
 
-        
-   <!-- Primer objeto -->
-        <a-entity obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl" position="0 0 -10" rotation="90 0 0"  scale="0.1 0.1 0.1" <!-- Ajusta la escala aquí para hacer el objeto más pequeño -->
-            position="0 1.5 -4"  rotation="0 45 0"   animation="property: rotation; to: 0 405 0; loop: true; dur: 5000">
-            <!-- Añade una animación de rotación -->
-        </a-entity>      
-    </a-scene>
-</body>
-</html>
 
 
 
