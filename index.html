@@ -13,7 +13,11 @@
         
         <!-- Objeto -->
         <a-entity 
-            obj-model="obj: #pieza1-obj; mtl: #pieza1-mtl" scale="0.1 0.1 0.1"  position="0 1.5 -4">
+            obj-model="obj: #pieza1-obj; mtl: #pieza1-mtl"
+            scale="0.1 0.1 0.1" <!-- Ajusta la escala aquí para hacer el objeto más pequeño -->
+            position="0 1.5 -4"
+            rotation="0 45 0" <!-- Ajusta la rotación aquí para cambiar la orientación inicial del objeto -->
+            animation="property: rotation; to: 0 405 0; loop: true; dur: 5000"> <!-- Añade una animación de rotación -->
         </a-entity>
         
         <!-- Asset Management -->
@@ -24,5 +28,6 @@
     </a-scene>
 </body>
 </html>
+
 
 
