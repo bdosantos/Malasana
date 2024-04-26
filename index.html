@@ -8,38 +8,26 @@
 </head>
 <body>
    <a-scene>
-  <a-assets>
-    <a-asset-item id="obj-model" src="mesa.obj"></a-asset-item>
-    <a-asset-item id="obj-mtl" src="mesa.mtl"></a-asset-item>
-  </a-assets>
-  <a-obj-model src="#obj-model" mtl="#obj-mtl" position="0 -2 -10" scale="0.75 0.75 0.75"></a-obj-model>
+      <a-assets>
+        <a-asset-item id="mesa-obj" src="mesa.obj"></a-asset-item>
+        <a-asset-item id="mesa-mtl" src="mesa.mtl"></a-asset-item>
+        <a-asset-item id="pieza1-obj" src="pieza1.obj"></a-asset-item>
+        <a-asset-item id="pieza1-mtl" src="pieza1.mtl"></a-asset-item>
+        <a-asset-item id="pieza2-obj" src="pieza2.obj"></a-asset-item>
+        <a-asset-item id="pieza2-mtl" src="pieza2.mtl"></a-asset-item>
+        <a-asset-item id="pieza3-obj" src="pieza3.obj"></a-asset-item>
+        <a-asset-item id="pieza3-mtl" src="pieza3.mtl"></a-asset-item>
+      </a-assets>
 
-        <!-- Primer objeto -->
-        <a-entity obj-model="obj:./mesa.obj;mtl:./mesa.mtl" position "0 0 -5" scale="0.5 0.5 0.5">  </a-entity>
-            
-        <a-entity 
-            obj-model="obj:./pieza1.obj; mtl:./pieza1.mtl" 
-            position="0 1.5 -4" 
-            scale="0.05 0.05 0.05"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"> 
-        </a-entity>  
+      <!-- Carga de la mesa -->
+      <a-obj-model src="#mesa-obj" mtl="#mesa-mtl" position="0 -2 -10" scale="0.75 0.75 0.75"></a-obj-model>
 
-        <!-- Segundo objeto -->
-        <a-entity
-            obj-model="obj:./pieza2.obj; mtl:./pieza2.mtl"
-            position="0 1.5 0"
-            scale="0.05 0.05 0.05"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 7000">
-        </a-entity>   
-        <!--Tercer objeto-->
-         <a-entity
-            obj-model="obj:./pieza3.obj; mtl:./pieza3.mtl"
-            position="0 1.5 4"
-            scale="0.05 0.05 0.05"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 7000">
-        </a-entity>     
-    </a-scene>
-</body>
-</html>
+      <!-- Carga de las piezas -->
+      <a-obj-model src="#pieza1-obj" mtl="#pieza1-mtl" position="0 1.5 -4" scale="0.05 0.05 0.05" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"></a-obj-model>
+
+      <a-obj-model src="#pieza2-obj" mtl="#pieza2-mtl" position="0 1.5 0" scale="0.05 0.05 0.05" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"></a-obj-model>
+
+      <a-ob
+
 
 
