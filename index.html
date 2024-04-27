@@ -23,12 +23,33 @@
       <a-assets>
         <a-asset-item id="taller-obj" src="taller.obj"></a-asset-item>
         <a-asset-item id="taller-mtl" src="taller.mtl"></a-asset-item>
+        
       </a-assets>
        
+        <a-entity obj-model="obj:#Niko-obj; mtl:#Nico-mtl" position="0 1 -10" rotation="90 0 0"></a-entity>
+       
+       <!-- Script para animar el objeto por el taller-->
+        <script>
+            // Obtener el objeto que se moverá
+            var objeto = document.querySelector('[obj-model]');
+
+            // Animar el objeto para que se mueva por el taller
+            objeto.setAttribute('animation', { 
+                property: 'position',   
+                to: '0 1 10',  
+                dur: 10000,     
+                easing: 'linear',
+                autoplay: true, 
+                loop: true     
+            });
+
+        </script>
+
       <!-- Modelo 3D -->
       <a-obj-model src="#taller-obj" mtl="#taller-mtl"  scale="1 1 1"></a-obj-model>
    </a-scene>
 </body>
 </html>
+
 
 
