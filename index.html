@@ -14,14 +14,15 @@
       <!-- Fuente de luz direccional para simular la luz solar -->
       <a-light type="directional" color="#FFFFFF" intensity="1" position="2 4 3"></a-light>
       
-      <!-- Imagen de fondo -->
-      <a-sky src="paisaje.jpg"></a-sky>
+      <!-- Imagen de fondo (skybox) -->
+      <a-sky src="paisaje.jpg" scale="10 10 10"></a-sky>
       
       <a-assets>
         <a-asset-item id="taller-obj" src="taller.obj"></a-asset-item>
         <a-asset-item id="taller-mtl" src="taller.mtl"></a-asset-item>
       </a-assets>
        
+      <!-- Modelo 3D -->
       <a-obj-model src="#taller-obj" mtl="#taller-mtl"  scale="1 1 1"></a-obj-model>
    </a-scene>
 </body>
