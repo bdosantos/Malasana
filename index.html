@@ -14,33 +14,15 @@
       <!-- Fuente de luz direccional para simular la luz solar -->
       <a-light type="directional" color="#FFFFFF" intensity="1" position="2 4 3"></a-light>
       
-
-      <!-- Configuración del cursor -->
-      <a-entity cursor="rayOrigin: entity; fuse: true; fuseTimeout: 1500;"
-                raycaster="objects: .collidable"
-                position="0 0 -1"
-                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                material="color: red; shader: flat">
-      </a-entity>
-      
-      <!-- Configuración del raycaster -->
-      <a-entity raycaster="objects: .collidable"></a-entity>
-      
       <!-- Imagen de fondo -->
-      <a-sky src="Paisaje.jpg"></a-sky>
+      <a-sky src="paisaje.jpg"></a-sky>
       
-      <!-- Objeto colisionable -->
-      <a-obj-model src="#taller-obj" mtl="#taller-mtl" class="collidable" scale="1 1 1"></a-obj-model>
-      
+      <a-assets>
+        <a-asset-item id="taller-obj" src="taller.obj"></a-asset-item>
+        <a-asset-item id="taller-mtl" src="taller.mtl"></a-asset-item>
+      </a-assets>
+       
+      <a-obj-model src="#taller-obj" mtl="#taller-mtl"  scale="1 1 1"></a-obj-model>
    </a-scene>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
