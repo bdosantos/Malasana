@@ -14,8 +14,20 @@
       <!-- Fuente de luz direccional para simular la luz solar -->
       <a-light type="directional" color="#FFFFFF" intensity="1" position="2 4 3"></a-light>
       
+      <!-- Cargar modelo "Nico" -->
+      <a-assets>
+        <a-asset-item id="nico-obj" src="Nico.obj"></a-asset-item>
+        <a-asset-item id="nico-mtl" src="Nico.mtl"></a-asset-item>
+      </a-assets>
+      <a-obj-model id="nico" src="#nico-obj" mtl="#nico-mtl" position="0 0 -10" scale="0.2 0.2 0.2"></a-obj-model>
+
       <!-- Configuración del cursor -->
-      <a-entity cursor="rayOrigin: mouse"></a-entity>
+      <a-entity cursor="rayOrigin: entity; fuse: true; fuseTimeout: 1500;"
+                raycaster="objects: .collidable"
+                position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: red; shader: flat">
+      </a-entity>
       
       <!-- Configuración del raycaster -->
       <a-entity raycaster="objects: .collidable"></a-entity>
@@ -23,16 +35,13 @@
       <!-- Imagen de fondo -->
       <a-sky src="paisaje.jpg"></a-sky>
       
-      <a-assets>
-        <a-asset-item id="taller-obj" src="taller.obj"></a-asset-item>
-        <a-asset-item id="taller-mtl" src="taller.mtl"></a-asset-item>
-      </a-assets>
-       
       <!-- Objeto colisionable -->
       <a-obj-model src="#taller-obj" mtl="#taller-mtl" class="collidable" scale="1 1 1"></a-obj-model>
+      
    </a-scene>
 </body>
 </html>
+
 
 
 
