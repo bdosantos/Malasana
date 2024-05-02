@@ -14,19 +14,16 @@
       <!-- Fuente de luz direccional para simular la luz solar -->
       <a-light type="directional" color="#FFFFFF" intensity="1" position="2 4 3"></a-light>
       
-      
       <!-- Fuente de luz fuera de la escena -->
       <a-light type="ambient" color="#FFFFFF" intensity="0.5" position="0 10 -10"></a-light>
       
-   <!--objetos>
-        
-        <a-asset-item id="info3-glb" src=info3.glb"></a-asset-item>
-        
+      <!-- Carga de modelos -->
+      <a-assets>
+         <a-asset-item id="info3-glb" src="info3.glb"></a-asset-item>
       </a-assets>
        
-     
       <!-- Modelo 3D -->
-      <a-obj-model src="#info3.glb"scale="1 1 1"></a-obj-model>
+      <a-entity gltf-model="#info3-glb" scale="1 1 1"></a-entity>
    </a-scene>
 </body>
 </html>
